@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <form action="order.php" method="POST">
+            <div class="init">
+                <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email">
+            <label for="mobile">Mobile: </label>
+            <input type="text" name="mobile" id="mobile">
+            </div>
+            <hr>
+            <div class="tab">
+                <table>
+                <tr>
+                    <th>Serial</th>
+                    <th style="width: 400px;">Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Black Seed</td>
+                    <td>1960</td>
+                    <td><input type="number" name="blackSeed" id="blackSeed" value="0"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Olive Oil</td>
+                    <td>200</td>
+                    <td><input type="number" name="oliveOil" id="oliveOil" value="0"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Honey</td>
+                    <td>700</td>
+                    <td><input type="number" name="honey" id="honey" value="0"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sweet</td>
+                    <td>120</td>
+                    <td><input type="number" name="sweet" id="sweet" value="0"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Meat</td>
+                    <td>500</td>
+                    <td><input type="number" name="meat" id="meat" value="0"></td>
+                </tr>
+            </table>
+            </div>
+            <div class="orderBtnDiv">
+                <input class="orderBtn" type="submit" value="Order">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
